@@ -1,11 +1,11 @@
 <h1>A linguagem Java</h1>
 
-<p align = "justify">A linguagem Java surgiu no começo dos anos 90 sendo está a criação de um programador chamado <a href="https://pt.wikipedia.org/wiki/James_Gosling" target="_blank">James Gosling</a> [1]. O objetivo inicial da linguagem de programação (ainda chamada de Oak essa época) era resolver os problemas de dispositivos eletrônicos que necessitavam de uma certa automação para seu funcionamento. A grande questão até o presente momento da história é de que estes dispositivos funcionavam com linguagens de programação própria para cada dispositivo tal situação dificuldade a fabricação destes vistos o grande <i>boom</i> do mercado de eletrônicos alavancados pelo surgimento da internet e dos computadores pessoais. <br><br>
+<p align = "justify">A linguagem Java surgiu no começo dos anos 90 sendo está a criação de um programador chamado <a href="https://pt.wikipedia.org/wiki/James_Gosling" target="_blank">James Gosling</a> <a href="#1">[1]</a>. O objetivo inicial da linguagem de programação (ainda chamada de Oak essa época) era resolver os problemas de dispositivos eletrônicos que necessitavam de uma certa automação para seu funcionamento. A grande questão até o presente momento da história é de que estes dispositivos funcionavam com linguagens de programação própria para cada dispositivo tal situação dificuldade a fabricação destes vistos o grande <i>boom</i> do mercado de eletrônicos alavancados pelo surgimento da internet e dos computadores pessoais. <br><br>
 Uma das grandes evoluções trazidas pela linguagem Java foi a criação da <b>Máquina Virtual Java</b> (<i>Java Virtual Machine</i>) que permitiu que o mesmo código fonte pudesse ser executado em diversos sistemas operacionais, ou seja, independente do sistema operacional.
 </p>
 
 <h2>Primeiros passos em Java</h2>
-<p align = "justify">O primeiros passos em Java serão dados empregando o compilador <i>online</i><a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">jdoodle [1]</a>. <br><br>
+<p align = "justify">O primeiros passos em Java serão dados empregando o compilador <i>online</i> <a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">jdoodle [1]</a>. <br><br>
 Nosso primeiro programa em Java será o tradicional <b>Hello, world!</b> ou <b>Olá Mundo!</b>.  <br><br>
 Todo programa Java começa com a palavra-chave <code><b>class</b></code> e um método principal denominado de <code><b>main</b></code>. Vejamos o exemplo~da estrutura primária do algoritmo:</p>
 
@@ -53,12 +53,6 @@ public class ComputaArea {
 }
 ```
 
-
-
-
-
-
-
 <h2>Referências</h2>
-[1]	Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.
+<p id="1" align = "left">[1] Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.</p>
 
