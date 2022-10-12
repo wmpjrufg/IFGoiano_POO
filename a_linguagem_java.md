@@ -58,15 +58,15 @@ public class ComputaArea {
 <p align = "justify">Para desenvolver aplicações no java vamos buscar no <a href="www.google.com.br" target="_blank">Google</a> pela palavra-chave "java download jdk". <br><br>
 Após a instalação do <b>java</b> o primeiro programa poderá ser compilado utilizando o <code>cmd</code>. Utilizando o comando <code>cd..</code> para acessar a pasta do arquivo. Com o caminho atualizado no terminal MS-DOS execute o seguintes comandos:</p> 
 
-```
+```sh
 javac arq1.java 
 ```
 
-<p align = "justify">O nome do arquivo deverá ser o mesmo da classe adotada. No caso o nomes dos arquivos desse repositório estão com o padrão arq<numeral>. Onde <> indica o numeral a ser digitado.<br><br>
+<p align = "justify">O nome do arquivo deverá ser o mesmo da classe adotada. No caso o nomes dos arquivos desse repositório estão com o padrão <code>arqNUMERAL</code>. Onde <> indica o numeral a ser digitado.<br><br>
 Se aplicarmos um comando <code>dir</code> será possível ver que um novo arquivo <code>.class</code> foi gerado na pasta. Esse arquivo é necessário para que a máquina virtural (formato bytecode) entenda o código java.<br><br>
 Portanto para executar o código digite no terminal:</p> 
 
-```
+```sh
 java arq1 
 ```
 
