@@ -73,7 +73,7 @@ java arq1
 <p align = "justify">Daqui em diante vamos utilizar uma IDE para o desenvolvimento em java. Neste caso vamos utilizar a IDE <a href="https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers" target="_blank">Eclipse</a>. Quando efetuar a instalação pode utilizar o pacote <b><i>Eclipse IDE for Java Developers</i></b>.<br><br>
 Para criar um novo projeto java no Eclipse basta clicar em:</p>
 
-```shell
+```sh
 ├── File
     └── New (Alt+Shift+N)
         └── Java Project
@@ -81,7 +81,7 @@ Para criar um novo projeto java no Eclipse basta clicar em:</p>
 
 <p align = "justify">Aqui criaremos um projeto chamado <code>sintaxe-basica</code> e dentro da pasta <code>src</code> colocaremos os arquivos de extensão <code>.class</code>. Vamos então escrever o algoritmo arq1 dentro da plataforme Eclipse.</p>
 
-```shell
+```sh
 ├── src (clica com botão direito)
     └── New
         └── Class (Escrever arq1)
@@ -89,7 +89,7 @@ Para criar um novo projeto java no Eclipse basta clicar em:</p>
 
 <p align = "justify">Com o arquivo <code>arq1.java</code> criado utilize o comando:</p>
 
-```shell
+```sh
 ├── Botão Direito
     └── Run As
         └── Java Application
