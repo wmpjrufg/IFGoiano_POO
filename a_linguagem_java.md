@@ -5,9 +5,9 @@ Uma das grandes evoluções trazidas pela linguagem Java foi a criação da <b>M
 </p>
 
 <h2>Primeiros passos em Java</h2>
-<p align = "justify">O primeiros passos em Java serão dados empregando o compilador <i>online</i> <a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">jdoodle [1]</a>. <br><br>
+<p align = "justify">O primeiros passos em Java serão dados empregando o compilador <i>online</i> <a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">jdoodle</a>. <br><br>
 Nosso primeiro programa em Java será o tradicional <b>Hello, world!</b> ou <b>Olá Mundo!</b>.  <br><br>
-Todo programa Java começa com a palavra-chave <code><b>class</b></code> e um método principal denominado de <code><b>main</b></code>. Vejamos o exemplo~da estrutura primária do algoritmo:</p>
+Todo programa Java começa com a palavra-chave <code><b>class</b></code> e um método principal denominado de <code><b>main</b></code>. Vejamos o exemplo da estrutura primária do algoritmo:</p>
 
 ```java
 public class OlaMundo {
@@ -16,7 +16,7 @@ public class OlaMundo {
 	}
 }
 ```
-<p align = "justify">Veja que o programa Java utiliza-se das chaves <code>{ }</code> para denominar o trecho de início e fim de um algoritmo. Portanto para aplicar a impressão do termo <b>Olá Mundo!!!</b> vamos empregar o método <code>System.out.println</code>. Vejamos como fica aversão final do algoritmo:</p>
+<p align = "justify">Veja que o programa Java utiliza-se das chaves <code>{ }</code> para denominar o trecho de início e fim de um algoritmo. Portanto para aplicar a impressão do termo <b>Olá Mundo!!!</b> vamos empregar o método <code>System.out.println</code>. Vejamos como fica a versão final do algoritmo (<code>arq1.java</code>):</p>
 
 ```java
 public class OlaMundo {
@@ -33,7 +33,7 @@ Agora vamos empregar dados matemáticos para construção de um algoritmo Java. 
 import java.util.Scanner;
 ```
 
-<p align = "justify">Ainda sem entrar na Orientação à Objetos vamos criar um objeto que que quando invocado permitirá a execução de métodos referentes a leitura do dado digitado via teclado. Vejamos o exemplo:</p> 
+<p align = "justify">Ainda sem entrar na Orientação à Objetos vamos criar um objeto que que quando invocado permitirá a execução de métodos referentes a leitura do dado digitado via teclado. Vejamos o exemplo (<code>arq2.java</code>):</p> 
 
 ```java
 import java.util.Scanner;
@@ -53,6 +53,49 @@ public class ComputaArea {
 }
 ```
 
-<h2>Referências</h2>
-<p id="1" align = "left">[1] Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.</p>
+<h2>Instalando o Java e rodando o primeiro programa</h2>
+
+<p align = "justify">Para desenvolver aplicações no java vamos buscar no <a href="www.google.com.br" target="_blank">Google</a> pela palavra-chave "java download jdk". <br><br>
+Após a instalação do <b>java</b> o primeiro programa poderá ser compilado utilizando o <code>cmd</code>. Utilizando o comando <code>cd..</code> para acessar a pasta do arquivo. Com o caminho atualizado no terminal MS-DOS execute o seguintes comandos:</p> 
+
+```
+javac arq1.java 
+```
+
+<p align = "justify">O nome do arquivo deverá ser o mesmo da classe adotada. No caso o nomes dos arquivos desse repositório estão com o padrão arq<numeral>. Onde <> indica o numeral a ser digitado.<br><br>
+Se aplicarmos um comando <code>dir</code> será possível ver que um novo arquivo <code>.class</code> foi gerado na pasta. Esse arquivo é necessário para que a máquina virtural (formato bytecode) entenda o código java.<br><br>
+Portanto para executar o código digite no terminal:</p> 
+
+```
+java arq1 
+```
+
+<p align = "justify">Daqui em diante vamos utilizar uma IDE para o desenvolvimento em java. Neste caso vamos utilizar a IDE <a href="https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers" target="_blank">Eclipse</a>. Quando efetuar a instalação pode utilizar o pacote <b><i>Eclipse IDE for Java Developers</i></b>.<br><br>
+Para criar um novo projeto java no Eclipse basta clicar em:</p>
+
+```shell
+├── File
+    └── New (Alt+Shift+N)
+        └── Java Project
+```
+
+<p align = "justify">Aqui criaremos um projeto chamado <code>sintaxe-basica</code> e dentro da pasta <code>src</code> colocaremos os arquivos de extensão <code>.class</code>. Vamos então escrever o algoritmo arq1 dentro da plataforme Eclipse.</p>
+
+```shell
+├── src (clica com botão direito)
+    └── New
+        └── Class (Escrever arq1)
+```
+
+<p align = "justify">Com o arquivo <code>arq1.java</code> criado utilize o comando:</p>
+
+```shell
+├── Botão Direito
+    └── Run As
+        └── Java Application
+```
+
+<h2>Sintaxe básica</h2>
+
+<p align = "justify">O Java é uma linguagem estática e fortemente tipada. Logo será necessário informar no começo do código o tipo da variável. Tal exemplo disso foi feito no algoritmo <code>arq2</code>.</p>
 
