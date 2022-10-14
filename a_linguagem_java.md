@@ -129,27 +129,27 @@ A Tabela 1 apresenta os tipos de variáveis numéricas:</p>
   </tr>
   <tr>
     <td>short</td>
-    <td>\(-2^15\) a \(2^15-1\)</td>
+    <td>\(-2^{15}\) a \(2^{15}-1\)</td>
     <td>16-bit</td>
   </tr>
   <tr>
     <td>int</td>
-    <td>\(-2^31\) a \(2^31-1\)</td>
+    <td>\(-2^{31}\) a \(2^{31}-1\)</td>
     <td>32-bit</td>
   </tr>
   <tr>
     <td>long</td>
-    <td>\(-2^63\) a \(2^63-1\)</td>
+    <td>\(-2^{63}\) a \(2^{63}-1\)</td>
     <td>64-bit</td>
   </tr>
   <tr>
     <td>float</td>
-    <td>\(-3.4028235^38\) a \(-1.4^{-45}\) e \(1.4^-45\) a \(3.4028235^38\)</td>
+    <td>\(-3.4028235^{38}\) a \(-1.4^{-45}\) e \(1.4^{-45}\) a \(3.4028235^{38}\)</td>
     <td>32-bit IEEE 754</td>
   </tr>
   <tr>
     <td>double</td>
-    <td>\(-1.79769^308\) a \(-4.9^{-324}\) e \(4.9^{-324}\) a \(1.79769^308\)</td>
+    <td>\(-1.79769^{308}\) a \(-4.9^{-324}\) e \(4.9^{-324}\) a \(1.79769^{308}\)</td>
     <td>64-bit IEEE 754</td>
   </tr>
 </tbody>
@@ -222,6 +222,8 @@ Outup:
 
 <h2>Controle de fluxo</h2>
 
+<h3>Decisão</h3>
+
 <p align = "justify">Primeiro veremos a sintaxe do controle de decisão <b>if</b>.</p>
 
 ```java
@@ -259,11 +261,11 @@ public class Arq6 {
         int idade = input.nextInt();
         if (idade < 13) {
             System.out.println("O jogador não pode ser inscrito neste torneio");
-        } else if (idade > 14 &  idade <= 15) {
+        } else if (idade > 14 &&  idade <= 15) {
             System.out.println("Jogador inscrito na categoria Sub-15");
-        } else if (idade > 15 &  idade <= 17) {
+        } else if (idade > 15 &&  idade <= 17) {
             System.out.println("Jogador inscrito na categoria Sub-17");  
-        } else if (idade > 17 &  idade <= 20) {
+        } else if (idade > 17 &&  idade <= 20) {
             System.out.println("Jogador inscrito na categoria Sub-20");
         } else if (idade > 20) {
             System.out.println("Jogador inscrito na categoria adulto");
@@ -277,3 +279,98 @@ Entre com a idade do jogador de futebol:
 22
 Jogador inscrito na categoria adulto
 ```
+
+<p align = "justify">Utilize o <code>switch</code> quando tiver uma grande quantidade de possibilidades.</p>
+
+```java
+public class Arq7 {
+    public static void main(String[] args) {
+        int mes = 10;
+        switch (mes) {
+            case 1:
+                System.out.println("O mês é Janeiro");
+                break;
+            case 2:
+                System.out.println("O mês é Fevereiro");
+                break;
+            case 3:
+                System.out.println("O mês é Março");
+                break;
+            case 4:
+                System.out.println("O mês é Abril");
+                break;
+            case 5:
+                System.out.println("O mês é Maio");
+                break;
+            case 6:
+                System.out.println("O mês é Junho");
+                break;
+            case 7:
+                System.out.println("O mês é Julho");
+                break;
+            case 8:
+                System.out.println("O mês é Agosto");
+                break;
+            case 9:
+                System.out.println("O mês é Setembro");
+                break;
+            case 10:
+                System.out.println("O mês é Outubro");
+                break;
+            case 11:
+                System.out.println("O mês é Novembro");
+                break;
+            case 12:
+                System.out.println("O mês é Dezembro");
+                break;
+            default:
+                System.out.println("Mês inválido");
+                break;
+        }
+    }
+}
+```
+```
+Outup:
+O mês é Outubro
+```
+
+<h3>Laço</h3>
+
+<p align = "justify">Agora veremos o controle de fluxo por laço. Primeiro vamos ver o laço <code>while</code>. Vejamos o exemplo:</p>
+
+```java
+public class arq3 {
+	public static void main(String args[]) {
+		int contador = 0;
+		while (contador < 10) {
+			System.out.println("Repetição nr: " + contador);
+			contador += 1;
+			// Outra possibilidade
+			// contador++
+		}
+	}
+}
+```
+```
+Outup:
+Repetição nr: 0
+Repetição nr: 1
+Repetição nr: 2
+Repetição nr: 3
+Repetição nr: 4
+Repetição nr: 5
+Repetição nr: 6
+Repetição nr: 7
+Repetição nr: 8
+Repetição nr: 9
+```
+
+<blockquote>
+<p align = "justify">Veja que a repetição parou em 9 visto que a marcação de para foi estabelecida em <code>< 10</code>. Também é válido salientar os formatos de soma com operadores ariméticos incrementais como o exemplo <code>contador++</code>.</p>
+</blockquote>
+
+<h2>Referências</h2>
+<p align = "left" id = "1">[1]	Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.</p>
+
+
