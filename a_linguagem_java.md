@@ -340,7 +340,7 @@ O mês é Outubro
 <p align = "justify">Agora veremos o controle de fluxo por laço. Primeiro vamos ver o laço <code>while</code>. Vejamos o exemplo:</p>
 
 ```java
-public class arq3 {
+public class Arq8 {
 	public static void main(String args[]) {
 		int contador = 0;
 		while (contador < 10) {
@@ -365,10 +365,107 @@ Repetição nr: 7
 Repetição nr: 8
 Repetição nr: 9
 ```
-
 <blockquote>
 <p align = "justify">Veja que a repetição parou em 9 visto que a marcação de para foi estabelecida em <code>< 10</code>. Também é válido salientar os formatos de soma com operadores ariméticos incrementais como o exemplo <code>contador++</code>.</p>
 </blockquote>
+
+<p align = "justify">Agora veremos o controle de fluxo por um laço <code>for</code>. Vamos ver exemplo de uma contagem crescente e decrescente:</p>
+
+```java
+public class Arq9 {
+	public static void main(String args[]) {
+		// Contagem crescente
+        System.out.println("Teste de contagem crescente");
+        for (int i = 0; i < 10; i++) {
+			System.out.println("Contagem crescente: " + i);
+		}
+        System.out.println();
+        
+        // Contagem decrescente
+		System.out.println("Teste de contagem decrescente");
+        for (int i = 9; i > -1; i--) {
+			System.out.println("Contagem decrescente: " + i);
+		}
+	}
+}
+```
+```
+Outup:
+Teste de contagem crescente
+Contagem crescente: 0
+Contagem crescente: 1
+Contagem crescente: 2
+Contagem crescente: 3
+Contagem crescente: 4
+Contagem crescente: 5
+Contagem crescente: 6
+Contagem crescente: 7
+Contagem crescente: 8
+Contagem crescente: 9
+
+Teste de contagem decrescente
+Contagem decrescente: 9
+Contagem decrescente: 8
+Contagem decrescente: 7
+Contagem decrescente: 6
+Contagem decrescente: 5
+Contagem decrescente: 4
+Contagem decrescente: 3
+Contagem decrescente: 2
+Contagem decrescente: 1
+Contagem decrescente: 0
+```
+
+<p align = "justify">Podemos empregar o comando <code>break</code> dentro de um laço <code>for</code> definindo assim uma parada. Vejamos o exemplo:</p>
+
+```java
+public class Arq10 {
+	public static void main(String args[]) {
+		// Contagem crescente
+        System.out.println("Teste de contagem crescente");
+        for (int i = 0; i < 10; i++) {
+			System.out.println("Contagem crescente: " + i);
+            if (i == 5) {
+                break;
+            }
+		}
+        System.out.println();
+        
+        // Contagem decrescente
+		System.out.println("Teste de contagem decrescente");
+        for (int i = 9; i > -1; i--) {
+			System.out.println("Contagem decrescente: " + i);
+		}
+	}
+}
+```
+```
+Outup:
+Teste de contagem crescente
+Contagem crescente: 0
+Contagem crescente: 1
+Contagem crescente: 2
+Contagem crescente: 3
+Contagem crescente: 4
+Contagem crescente: 5
+
+Teste de contagem decrescente
+Contagem decrescente: 9
+Contagem decrescente: 8
+Contagem decrescente: 7
+Contagem decrescente: 6
+Contagem decrescente: 5
+Contagem decrescente: 4
+Contagem decrescente: 3
+Contagem decrescente: 2
+Contagem decrescente: 1
+Contagem decrescente: 0
+```
+
+<blockquote>
+<p align = "justify">Veja que o contador ao atingir o valor <code>i=5</code> efetua o comando <code>break</code> saindo assim do primeiro laço de repetição.</p>
+</blockquote>
+
 
 <h2>Referências</h2>
 <p align = "left" id = "1">[1]	Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.</p>
