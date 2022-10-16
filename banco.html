@@ -1,0 +1,83 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<h1>O projeto final</h1>
+
+<p align="justify">Este projeto foi desenvolvido ao longo do meu treinamento na plataforma Alura.<br><br>
+    O primeiro passo deste projeto consiste no entendimento do elemento principal de um banco a conta corrente. Vamos
+    entender quais os dados ou atributos de uma conta corrente.
+</p>
+<ol>
+    <li>Saldo</li>
+    <li>Agência</li>
+    <li>Número</li>
+    <li>Titular</li>
+</ol>
+
+<p align="justify">Quais operações podem ser feitas por exemplo dentro de uma conta:</p>
+
+<ol>
+    <li>Saque</li>
+    <li>Transferência</li>
+    <li>Depósito</li>
+</ol>
+
+<p align="justify">Para iniciar o algoritmo do <b>IFBank</b> vamos criar o arquivo auxiliar, <code>Conta.java</code>, que guardará as informações da classe conta. Para isso criaremos o seguinte código dentro deste arquivo <code>.java</code></p>
+
+```java
+class Conta {
+	double saldo;
+	int agencia;
+	int numero;
+	String titular;
+}
+```
+
+<p align="justify">Para criar uma nova conta (a primeira conta) utilziando a linguagem Java devemos empregar a palavra chave <code>new</code>. Portanto escreveremos o seguinte código:</p>
+
+```java
+public class CriaConta {
+	public static void main(String[] args) {
+		Conta joaoConta = new Conta();
+		System.out.println(joaoConta);
+	}
+}
+```
+```
+Output
+Conta@76ed5528
+```
+<blockquote>
+    <p align="justify">Perceba que o código Java no seu <i>output</i> referência um endereço onde está guardada a informação do objetvo instânciado. Além disso é possível observar a variável <code>joaoConta</code> é do tipo <b>Conta</b>. Tal fato faz referência a classe criada no arquivo <code>Conta.java</code>.</p>
+</blockquote>
+
+<p align="justify">Agora vamos estabelecer um saldo para esta conta e imprimir no console o mesmo:</p>
+
+```java
+public class CriaConta {
+	public static void main(String[] args) {
+		Conta joaoConta = new Conta();
+		joaoConta.saldo = 2000;
+		System.out.println("Saldo joão: $ " + joaoConta.saldo);
+	}
+}
+```
+```
+Output
+Saldo joão: $ 2000.0
+```
+<p align="justify">Preenchendo os atributos do primeiro objeto:</p>
+
+```java
+public class CriaConta {
+	public static void main(String[] args) {
+		Conta joaoConta = new Conta();
+		joaoConta.saldo = 2000;
+		System.out.println("Saldo joão: $ " + joaoConta.saldo);
+	}
+}
+```
+```
+Output
+Saldo 
+```

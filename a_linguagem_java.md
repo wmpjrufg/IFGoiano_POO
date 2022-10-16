@@ -466,7 +466,6 @@ Contagem decrescente: 0
 <p align = "justify">Veja que o contador ao atingir o valor <code>i=5</code> efetua o comando <code>break</code> saindo assim do primeiro laço de repetição.</p>
 </blockquote>
 
-
 <h2>Referências</h2>
 <p align = "left" id = "1">[1]	Wikipédia. James Gosling. Wikipédia 2022. https://pt.wikipedia.org/wiki/James_Gosling.</p>
 
