@@ -5,6 +5,6 @@
 <ol>
   <li><a href="https://wmpjrufg.github.io/IFGoiano_POO/a_linguagem_java.html" target="_blank">A Linguagem Java</a></li>
   <li><a href="https://wmpjrufg.github.io/IFGoiano_POO/oo.html" target="_blank">Orientação a Objetos</a></li>
-  <li><a href="https://wmpjrufg.github.io/IFGoiano_POO/banco.html" target="_blank">O projeto final</a></li>
+  <li><a href="https://wmpjrufg.github.io/IFGoiano_POO/biblioteca.html" target="_blank">O projeto final</a></li>
 </ol>
 
