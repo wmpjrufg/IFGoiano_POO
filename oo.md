@@ -24,7 +24,7 @@ Para exemplificar o conceito de classes e objetos vamos construir um exemplo des
 
 <p align = "justify">Uma grande diferença entre objetos e classes está na forma como os atributos e métodos são tratados em objetos e classes. Uma classe é uma definição sobre objetos; a atributos e métodos em uma classe são, portanto, declarações que não contêm valores. No entanto, os objetos são instâncias criadas de uma classe. Cada um tem seus próprios atributos e métodos. Os valores do conjunto de atributos descrevem o estado dos objetos <a href="#24">[5]</a>.</p>
 
-<p align = "justify">Para treinar o nosso projeto Java vamos construir um algoritmo para um Banco. O projeto pode ser visualizado neste <a href="https://wmpjrufg.github.io/IFGoiano_POO/banco.html" target="_blank"><i>link</i></a></p>
+<p align = "justify">Para treinar o nosso projeto Java vamos construir um algoritmo para uma Biblioteca. O projeto pode ser visualizado neste <a href="https://wmpjrufg.github.io/IFGoiano_POO/biblioteca.html" target="_blank"><i>link</i></a></p>
 
 
 <h2>Referências</h2>
