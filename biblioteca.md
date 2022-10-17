@@ -290,9 +290,7 @@ class Usuarios {
 }
 ```
 
-<blockquote>
-<p align = "justify">Veja que já foi criado o método de transferência do livro que sempre tira uma unidade de um objeto e passa para dentro do objeto <code>destino</conta>.</p>
-</blockquote>
+<blockquote><p align = "justify">Veja que já foi criado o método de transferência do livro que sempre tira uma unidade de um objeto e passa para dentro do objeto <code>destino</conta>.</p></blockquote>
 
 <p align="justify">Fazendo o teste da transferencia em um novo arquivo temos o seguinte algoritmo:</p>
 
