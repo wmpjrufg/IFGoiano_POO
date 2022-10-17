@@ -1,7 +1,7 @@
 class Usuarios {
     String nome;
     String matricula;
-    int quantidade;
+    private int quantidade;
     
     
     public boolean transfere(int numLivros, Usuarios destino) {
@@ -14,5 +14,16 @@ class Usuarios {
             System.out.println("Não foi possível transferir o livro!!!!");
             return false;
         }
+    }
+    
+    // Novo método criado para adicionar quantidade
+    public boolean addQuantidade() {
+        this.quantidade += 1;
+        return true;
+    }
+    
+    // Novo método criado para imprimir quantidade
+    public void printQuantidade() {
+        System.out.println("A quantidade é: " + this.quantidade);
     }
 }
