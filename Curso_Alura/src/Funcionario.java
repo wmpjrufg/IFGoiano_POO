@@ -6,14 +6,7 @@ public class Funcionario {
 	private String tipo;
 		
 	public double getBonificacao() {		
-		
-		if(this.tipo == "gerente") {
-			return this.salario * 0.10;
-		} else if(this.tipo == "vendedor"){
-			return this.salario * 0.20;
-		} else {
-			return this.salario + 1000.0;
-		}
+		return this.salario * 0.10;
 	}
 	
 	public String getNome() {
