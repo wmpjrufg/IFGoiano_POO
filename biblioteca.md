@@ -245,7 +245,6 @@ public class AdicionarLivro {
 		publio8554274040.quantidade = 10;
 		System.out.println("Livro: " + publio8554274040.nome);
 		System.out.println("Quantidade: " + publio8554274040.quantidade);
-
 		
 		// Nova quantidade de livros usando método
 		publio8554274040.deposita(30);
@@ -273,8 +272,7 @@ O empréstimo foi possível?: false
 class Usuarios {
     String nome;
     String matricula;
-    int quantidade;
-    
+    int quantidade; 
     
     public boolean transfere(int numLivros, Usuarios destino) {
         if (this.quantidade > 0) {
@@ -290,7 +288,10 @@ class Usuarios {
 }
 ```
 
-<blockquote><p align = "justify">Veja que já foi criado o método de transferência do livro que sempre tira uma unidade de um objeto e passa para dentro do objeto <code>destino</conta>.</p></blockquote>
+<blockquote>
+	<p align = "justify">Veja que já foi criado o método de transferência do livro que sempre tira uma unidade de um objeto e passa para dentro do objeto <code>destino</code>.
+	</p>
+</blockquote>
 
 <p align="justify">Fazendo o teste da transferencia em um novo arquivo temos o seguinte algoritmo:</p>
 
@@ -427,3 +428,86 @@ Ref. local: Usuarios@2c7b84de
 
 <center><img src="fig_1.svg"></center>
 <p align = "center"><b>Figura 1</b>. Representação da referência do usuário que está com o livro.</p>
+
+<p align = "justify">Na orientação a objetos é comum que apenas métodos acessem propriedades dos atributos e as modifiquem. Neste caso chamamos essa propriedade de encapsulamento. Para isto basta aplicar private na frente da variável no arquivo <code>Acervo.java</code>. O atributo que vamos promover o encapsulamento é o atributo <code>usuario</code>. <br><br>
+No nosso exemplo vamos empregar um método de encapsulamento para a quantidade de livros adicionada para cada usuário. Vejamos a codificação.</p>
+
+```java
+class Usuarios {
+    String nome;
+    String matricula;
+    private int quantidade;
+    
+    
+    public boolean transfere(int numLivros, Usuarios destino) {
+        if (this.quantidade > 0) {
+            this.quantidade -= numLivros;
+            destino.quantidade += numLivros;
+            System.out.println("Foi possível transferir o livro!!!!");
+            return true; 
+        } else {
+            System.out.println("Não foi possível transferir o livro!!!!");
+            return false;
+        }
+    }
+    
+    // Novo método criado para adicionar quantidade
+    public boolean addQuantidade() {
+        this.quantidade += 1;
+        return true;
+    }
+    // Novo método criado para imprimir quantidade
+    public void printQuantidade() {
+        System.out.println("A quantidade é: " + this.quantidade);
+    }
+}
+
+public class Biblioteca {
+    public static void main(String[] args) {
+        
+        int numUsuarios = 0;
+        int numLivros = 0;
+        
+        // Instanciando um novo usuário: Biblioteca
+        Usuarios biblio = new Usuarios();
+        biblio.nome = "Biblioteca central";
+        biblio.matricula = "0000";
+        
+        // Instanciando um novo usuário: Aluno 1
+        Usuarios wmpjr = new Usuarios();
+        wmpjr.nome = "Wanderlei Malaquias Pereira Junior";
+        wmpjr.matricula = "0001";
+        numUsuarios += 1;
+        
+        // Instanciando o primeio livro
+        Acervo publio8554274040 = new Acervo();
+        publio8554274040.nome = "Pisos Industriais Com Concreto De Retração Compensada";
+        publio8554274040.ano = 2019;
+        publio8554274040.editora = "J.J. Carol";
+        publio8554274040.area = "Engenharia Civil";
+        publio8554274040.autor = "Públio Penna Firme Rodrigues";
+        publio8554274040.isbn = "8554274040";
+        publio8554274040.usuario = biblio;
+        biblio.addQuantidade();
+        numLivros += 1;
+        
+        // Impressões
+        System.out.println("Quantidade biblioteca");
+        biblio.printQuantidade();
+        System.out.println("Quantidade aluno");
+        wmpjr.printQuantidade();
+    }
+}
+
+```
+```
+Output:
+Quantidade biblioteca
+A quantidade é: 1
+Quantidade aluno
+A quantidade é: 0
+```
+
+<blockquote>
+<p align = "justify">Veja que durante a implementação o atributo <code>quantidade</code> deixou de ser acessível. Nem para questões de impressão via <code>System.out.println()</code>. Logo esse atributo só será acessível utilizando métodos da própria classe. Você perceberá que a quantidade 1 foi adicionada ao usuario <b>Biblioteca Central"</b>.</p>
+</blockquote>
