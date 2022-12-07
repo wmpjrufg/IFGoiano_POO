@@ -234,4 +234,23 @@ false
 <h1>Polimorfismo</h1>
 
 <p align="justify">O polimorfismo é o princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma das classes derivadas. Com o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos distintos, porém, com implementações lógicas diferentes.<br><br>
-Agora vamos generalizar o método de bonificação empregando o conceito de polimorfismo</p>
+Vamos avaliar a declaração de uma referência de gerente usando o tipo <b>Funcionario</b>. Vejamos:</p>
+
+```java
+public class Teste{
+
+	public static void main(String[] args) {
+		
+		Funcionario marcos = new Gerente();
+		
+		marcos.setNome("Marcos Oliveira");
+		
+		System.out.println(marcos.getNome());
+	}
+}
+```
+```
+Marcos Oliveira
+```
+
+<p align="justify">Portanto comessa condição acima a referência genérica foi empregada para criar um gerente a partir da referência funcionário. Se fizemos por exemplo um controle de bonificação o código <code>new Gerente()</code> garante que seja realizado o método que está dentro de <b>Gerente</b>.</p>
